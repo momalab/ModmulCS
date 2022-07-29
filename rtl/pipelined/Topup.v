@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Company: New York University Abu Dhabi
+// Engineer: Eduardo Chielle
+//
+// Description: part of SqueezerRule module 
+// 
+// Dependencies: none
+//////////////////////////////////////////////////////////////////////////////////
+
+module Topup(pi, qi, to, ta);
+
+input wire pi, qi;
+output wire to, ta;
+
+assign to = pi | qi;
+assign ta = pi & qi;
+
+endmodule
